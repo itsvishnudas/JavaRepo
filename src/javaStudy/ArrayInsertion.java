@@ -54,7 +54,15 @@ public class ArrayInsertion {
 		 for (int i = 0; i < array.length; i++) {
 			    System.out.println(" New 2nd element Index " + i + " contains " + array[i]);
 			    
-			}
+		 }
+			    
+
+			    array[1] = 44;
+			    
+			    for (int i = 0; i < array.length; i++) {
+				    System.out.println(" New 3rd element Index " + i + " contains " + array[i]);
+			    }
+			    
 
 	}
 
