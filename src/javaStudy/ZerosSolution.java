@@ -1,22 +1,19 @@
 package javaStudy;
 
-public class ZerosSolution {
-	
-	public void duplicateZeros(int[] arr) {
-		
-		int a[] = new int[6];
-		
-		int index = 0;
-		
-		for(i=0; i<6; i++) {
-			
-			if(a[i]!=0) {
-				
-			}
-		
-		}
-		
-		
-	}
+public class ZerosSolution {	
 
+public void duplicateZeros(int[] arr) {
+    int len = arr.length;
+    for (int i = arr.length - 1; i >= 0; i--) {
+        if (arr[i] == 0 && i != len - 1) {
+            for (int j = len - 1; j > i; j--) {
+                if (j < len - 1)
+                    arr[j + 1] = arr[j];
+            }
+            arr[i + 1] = 0;
+        }
+    }
 }
+}
+
+
